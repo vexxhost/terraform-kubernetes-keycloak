@@ -1,0 +1,12 @@
+name: test
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  terratest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: cloudposse/github-action-terratest@main
