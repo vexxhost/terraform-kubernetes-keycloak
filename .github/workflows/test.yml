@@ -9,4 +9,9 @@ jobs:
   terratest:
     runs-on: ubuntu-latest
     steps:
-      - uses: cloudposse/github-action-terratest@main
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@a90bcbc6539c36a85cdfeb73f7e2f433735f215b # v2.15.0
+        with:
+          egress-policy: audit
+
+      - uses: cloudposse/github-action-terratest@22f9431d93c6e19097bdd0575c7ec35f4954092b # main
