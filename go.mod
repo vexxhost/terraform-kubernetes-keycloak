@@ -1,6 +1,6 @@
 module github.com/vexxhost/terraform-kubernetes-keycloak
 
-go 1.20
+go 1.22
 
 require (
 	github.com/gruntwork-io/terratest v0.43.13
