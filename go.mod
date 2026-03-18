@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/gruntwork-io/terratest v0.43.13
-	github.com/vexxhost/terratest-toolkit v0.0.0-20230901051311-0e620fd492a0
+	github.com/vexxhost/terratest-toolkit v0.0.0-20260317070931-390ac6347e1f
 )
 
 require (
